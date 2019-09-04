@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{159BE4CD-192A-46C1-90E4-798F58550D7F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Myfacedetection_mtcnn_save</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\caffe\caffed\include;C:\Users\59771\.caffe\dependencies\libraries\include\boost-1_61;C:\Users\59771\.caffe\dependencies\libraries\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\59771\.caffe\dependencies\libraries\lib;D:\caffe\caffed\scripts\build\lib\Debug;D:\cuda9\Dev\lib\x64;C:\Users\59771\.caffe\dependencies\libraries\bin;D:\OpenBLAS-0.3.6-x64\lib;D:\cuda\lib\x64;D:\openCV\opencv31\opencv\build\x64\vc14\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>D:\caffe\caffe\include;C:\Users\59771\.caffe\dependencies\libraries\include\boost-1_61;C:\Users\59771\.caffe\dependencies\libraries\include;D:\caffe\caffe\scripts\build\include;D:\cuda9\Dev\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world310d.lib;opencv_world310.lib;caffe-d.bin.lib;caffe-d.lib;caffeproto-d.lib;compute_image_mean-d.lib;convert_imageset-d.lib;convert_mnist_data-d.lib;boost_atomic-vc140-mt-gd-1_61.lib;boost_chrono-vc140-mt-gd-1_61.lib;boost_container-vc140-mt-gd-1_61.lib;boost_context-vc140-mt-gd-1_61.lib;boost_coroutine-vc140-mt-gd-1_61.lib;boost_date_time-vc140-mt-gd-1_61.lib;boost_filesystem-vc140-mt-gd-1_61.lib;boost_graph-vc140-mt-gd-1_61.lib;boost_iostreams-vc140-mt-gd-1_61.lib;boost_locale-vc140-mt-gd-1_61.lib;boost_log-vc140-mt-gd-1_61.lib;boost_log_setup-vc140-mt-gd-1_61.lib;boost_math_c99-vc140-mt-gd-1_61.lib;boost_math_c99f-vc140-mt-gd-1_61.lib;boost_math_c99l-vc140-mt-gd-1_61.lib;boost_math_tr1-vc140-mt-gd-1_61.lib;boost_math_tr1f-vc140-mt-gd-1_61.lib;boost_math_tr1l-vc140-mt-gd-1_61.lib;boost_prg_exec_monitor-vc140-mt-gd-1_61.lib;boost_program_options-vc140-mt-gd-1_61.lib;boost_python-vc140-mt-gd-1_61.lib;boost_random-vc140-mt-gd-1_61.lib;boost_regex-vc140-mt-gd-1_61.lib;boost_serialization-vc140-mt-gd-1_61.lib;boost_signals-vc140-mt-gd-1_61.lib;boost_system-vc140-mt-gd-1_61.lib;boost_thread-vc140-mt-gd-1_61.lib;boost_timer-vc140-mt-gd-1_61.lib;boost_type_erasure-vc140-mt-gd-1_61.lib;boost_unit_test_framework-vc140-mt-gd-1_61.lib;boost_wave-vc140-mt-gd-1_61.lib;boost_wserialization-vc140-mt-gd-1_61.lib;caffehdf5_cpp_D.lib;caffehdf5_D.lib;caffehdf5_hl_cpp_D.lib;caffehdf5_hl_D.lib;caffezlibd.lib;caffezlibstaticd.lib;gflagsd.lib;glogd.lib;leveldbd.lib;libboost_chrono-vc140-mt-gd-1_61.lib;libboost_date_time-vc140-mt-gd-1_61.lib;libboost_exception-vc140-mt-gd-1_61.lib;libboost_filesystem-vc140-mt-gd-1_61.lib;libboost_system-vc140-mt-gd-1_61.lib;libboost_test_exec_monitor-vc140-mt-gd-1_61.lib;libboost_timer-vc140-mt-gd-1_61.lib;libboost_unit_test_framework-vc140-mt-gd-1_61.lib;libcaffehdf5_cpp_D.lib;libcaffehdf5_D.lib;libcaffehdf5_hl_cpp_D.lib;libcaffehdf5_hl_D.lib;libprotobuf-lited.lib;libprotobufd.lib;libprotocd.lib;lmdbd.lib;snappyd.lib;snappy_staticd.lib;cublas.lib;cublas_device.lib;cuda.lib;cudadevrt.lib;cudart.lib;cudart_static.lib;cufft.lib;cufftw.lib;curand.lib;cusolver.lib;cusparse.lib;nppc.lib;nppial.lib;nppicc.lib;nppicom.lib;nppidei.lib;nppif.lib;nppig.lib;nppim.lib;nppist.lib;nppisu.lib;nppitc.lib;npps.lib;nvblas.lib;nvcuvid.lib;nvgraph.lib;nvml.lib;nvrtc.lib;OpenCL.lib;libopenblas.lib;cudnn.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="FaceBox.cpp" />
+    <ClCompile Include="FaceCdt.cpp" />
+    <ClCompile Include="mtcnn.cpp" />
+    <ClCompile Include="Myfacedetection_mtcnn.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FaceBox.h" />
+    <ClInclude Include="FaceCdt.h" />
+    <ClInclude Include="layerhead.h" />
+    <ClInclude Include="mtcnn.h" />
+    <ClInclude Include="select_file.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="model\det1.caffemodel" />
+    <None Include="model\det1.prototxt" />
+    <None Include="model\det2.caffemodel" />
+    <None Include="model\det2.prototxt" />
+    <None Include="model\det3-half.caffemodel" />
+    <None Include="model\det3-half.prototxt" />
+    <None Include="model\det3.caffemodel" />
+    <None Include="model\det3.prototxt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
