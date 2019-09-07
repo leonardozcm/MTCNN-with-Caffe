@@ -25,3 +25,9 @@ paper url: [spl.pdf](https://github.com/happynear/MTCNN_face_detection_alignment
 ![C/C++](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile03.jpg)
 4. 链接器-》***输入***，配置静态库
 ![链接器](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile04.jpg)
+
+## 训练
+正在整理train code
+
+## 运行
+运行Myfacedetection_mtcnn.cpp,选择图片输入，进过卷积网络后得到输出。
