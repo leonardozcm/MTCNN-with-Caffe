@@ -15,8 +15,13 @@ paper url: [spl.pdf](https://github.com/happynear/MTCNN_face_detection_alignment
 
 ## 配置vs2017
 需要配置一些依赖项
-属性页
+
+### 属性页
 常规-》***平台工具集（v141）***
+![常规](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile01.jpg)
 调试-》***包含目录、库目录***
+![调试](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile02.jpg)
 C/C++-》***常规***
+![C/C++](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile03.jpg)
 链接器-》***输入***，配置静态库
+![链接器](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile04.jpg)
