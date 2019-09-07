@@ -37,8 +37,8 @@ int main(int argc, char **argv)
 	};**/
 	//mtcnn detector("../../Myfacedetection_mtcnn/model_with_landmark",true);
 	//mtcnn detector("../../Myfacedetection_mtcnn/MyModel_without_landmark",false);
-	//mtcnn detector("D:/Caffe_Dev/Myfacedetection_mtcnn_save/Myfacedetection_mtcnn/model_with_landmark",true);
-	mtcnn detector("D:/Caffe_Dev/Myfacedetection_mtcnn_save/Myfacedet ection_mtcnn/MyModel_without_lamdmark",false);
+	mtcnn detector("D:/Caffe_Dev/Myfacedetection_mtcnn_save/Myfacedetection_mtcnn/model_with_landmark",true);
+	//mtcnn detector("D:/Caffe_Dev/Myfacedetection_mtcnn_save/Myfacedetection_mtcnn/MyModel_without_lamdmark",false);
 	float factor = 0.709f;
 	float threshold[3] = { 0.7f, 0.6f, 0.6f };
 	int minSize = 15;
@@ -84,12 +84,13 @@ int main(int argc, char **argv)
 		//changed
 		//cv::cvtColor(image, image, cv::COLOR_RGB2BGR);
 		//cv::transpose(image, image);
-
-		cv::imwrite(root + "_res_stage" + to_string(stage) + "_" +name_list[n].substr(name_list[n].find_last_of('/')+1), image);
+		
+		cv::imwrite(root+"1.jpg", image);
+		//cv::imwrite(root + "0.jpg", image);
 		cv::imshow("image", image);
 		cv::waitKey(0);
 	}
-	return 0;
+	return 1;
 }
 
 
