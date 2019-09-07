@@ -11,7 +11,7 @@ paper url: [spl.pdf](https://github.com/happynear/MTCNN_face_detection_alignment
 4. dataset:[widerface](http://shuoyang1213.me/WIDERFACE/),[celebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
 
 ## Result 
-![MTCNN-facedetection](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/0.jpg)
+![MTCNN-facedetection]
 
 ## 配置vs2017
 需要配置一些依赖项
