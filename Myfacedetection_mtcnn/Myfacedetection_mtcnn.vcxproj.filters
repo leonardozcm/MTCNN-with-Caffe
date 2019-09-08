@@ -54,5 +54,11 @@
     <None Include="model\det3-half.caffemodel" />
     <None Include="model\det3.prototxt" />
     <None Include="model\det3-half.prototxt" />
+    <None Include="RaiseData\gen_neg.py" />
+    <None Include="RaiseData\gen_net_data.py" />
+    <None Include="RaiseData\gen_net_hard_example.py" />
+    <None Include="RaiseData\gen_net_imdb.py" />
+    <None Include="RaiseData\mytools.py" />
+    <None Include="RaiseData\utils.py" />
   </ItemGroup>
 </Project>
