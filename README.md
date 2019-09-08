@@ -27,7 +27,12 @@ paper url: [spl.pdf](https://github.com/happynear/MTCNN_face_detection_alignment
 ![链接器](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/vscompile04.jpg)
 
 ## 训练
-正在整理train code
+将wilderFace数据集解压放到RaiseData文件夹下，UNcomment掉12的netsize，运行生产12x12的样本图片，然后24、48.
+值得注意的是，48net的FP率会偏高，需要生产hardexample来强化学习，生成这个样板的脚本是gen_hard_example.py.
+最后生成imdb格式数据集就可以训练了。
+我的训练网络提供在RaiseData文件夹下，需要用得话记得修改路径。
 
 ## 运行
 运行Myfacedetection_mtcnn.cpp,选择图片输入，进过卷积网络后得到输出。
+![](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/屏幕截图(43).png)
+![](https://github.com/leonardozcm/MTCNN-with-Caffe/blob/master/Myfacedetection_mtcnn/image/屏幕截图(44).png)
